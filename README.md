@@ -8,7 +8,7 @@
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -44,13 +44,13 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
 ```
 
 **Note:** YADR will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`" -s ask
 ```
 
 # Additional Installation
@@ -154,7 +154,7 @@ Next time you load your shell, this file will be read and your prompt will be th
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
-[Learn more about YADR's pry customizations and how to install](https://github.com/skwp/dotfiles/blob/master/README-pry.md)
+[Learn more about YADR's pry customizations and how to install](https://github.com/lfilho/dotfiles/blob/master/README-pry.md)
 
 ### Git Configuration
 
@@ -502,6 +502,7 @@ Please explore these people's work.
 Yadr is made possible by many awesome people, too many to list :) But here are a few of the bigger contributors and core committers.
 
  * Initial Version: @skwp
+ * This customized repo: @lfilho
  * Cleanup, auto installer: @kylewest
  * Switch from oh-my-zsh to Presto: @JeanMertz
  * Vundle migration: @duhanebel
