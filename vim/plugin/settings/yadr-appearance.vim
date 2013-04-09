@@ -4,6 +4,10 @@
 colorscheme solarized
 set background=dark
 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
