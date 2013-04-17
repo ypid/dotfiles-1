@@ -15,6 +15,10 @@
 This is a collection of best of breed tools from across the web,
 from scouring other people's dotfile repos, blogs, and projects.
 
+## Differences of this fork with the original project:
+  * 4 spaces indenting by default
+  * Mustache templating system support
+
 ## What is YADR?
 
 **YADR is an opinionated dotfile repo that will make your heart sing**
@@ -510,5 +514,5 @@ Yadr is made possible by many awesome people, too many to list :) But here are a
 
 ### For more tips and tricks
 
-Follow my blog: http://yanpritzker.com
+Follow skwp's blog: http://yanpritzker.com
 
