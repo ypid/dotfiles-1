@@ -1,6 +1,4 @@
 " Make it beautiful - colors and fonts
-
-" http://ethanschoonover.com/solarized/vim-colors-solarized
 let s:myTheme='marelo'
 exec 'colorscheme ' . s:myTheme
 " Enforce the colors for each color scheme:
@@ -13,7 +11,6 @@ let s:colorSchemeCustom="~/.vim/colors-settings/" . s:myTheme . ".vim"
 if filereadable(expand(s:colorSchemeCustom))
     exec "au VimEnter * so " . s:colorSchemeCustom
 endif
-
 
 set background=dark
 
