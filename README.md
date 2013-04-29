@@ -16,7 +16,6 @@ This is a collection of best of breed tools from across the web,
 from scouring other people's dotfile repos, blogs, and projects.
 
 ## Differences of this fork with the original project:
-  * 4 spaces indenting by default
   * Mustache templating system support
   * Support for other vim themes than Solarized
   * `v` alias for opening `mvim` (MacVim)
@@ -26,7 +25,6 @@ from scouring other people's dotfile repos, blogs, and projects.
     * 3px line space between the lines for better readability
     * dark background and different colors
   * Dropped Ack in favor of Ag
-  * My peronsal zsh prompt theme (marelo) i- same as skwp's one but without the `user@machine` bit (not relevant for me)
 
 ## What is YADR?
 
