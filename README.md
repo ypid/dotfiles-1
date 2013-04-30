@@ -24,7 +24,6 @@ from scouring other people's dotfile repos, blogs, and projects.
     * 4 spaces indenting by default
     * 3px line space between the lines for better readability
     * dark background and different colors
-  * Dropped Ack in favor of Ag
 
 ## What is YADR?
 
