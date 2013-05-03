@@ -20,6 +20,7 @@ from scouring other people's dotfile repos, blogs, and projects.
   * Support for other vim themes than Solarized
   * `v` alias for opening `mvim` (MacVim)
   * `<ESC>` also clears highlighting, not only `,hl`
+  * Strips trailing withspace automatically upon save.
   * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
   * My personal vim color scheme (marelo)
     * 4 spaces indenting by default
