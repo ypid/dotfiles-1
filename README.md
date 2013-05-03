@@ -18,7 +18,10 @@ from scouring other people's dotfile repos, blogs, and projects.
 ## Differences of this fork with the original project:
   * 4 spaces indenting by default
   * Mustache templating system support
-  * My personal color scheme (marelo)
+  * Support for other vim themes than Solarized
+  * `v` alias for opening `mvim` (MacVim)
+  * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
+  * My personal vim color scheme (marelo)
     * 4 spaces indenting by default
     * 3px line space between the lines for better readability
     * dark background and different colors
