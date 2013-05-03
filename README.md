@@ -19,6 +19,7 @@ from scouring other people's dotfile repos, blogs, and projects.
   * Mustache templating system support
   * Support for other vim themes than Solarized
   * `v` alias for opening `mvim` (MacVim)
+  * `<ESC>` also clears highlighting, not only `,hl`
   * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
   * My personal vim color scheme (marelo)
     * 4 spaces indenting by default
@@ -160,7 +161,7 @@ Next time you load your shell, this file will be read and your prompt will be th
  * Syntax highlighting as you type commands
  * Lots more!
 
-### [Pry](http://pry.github.com/) 
+### [Pry](http://pry.github.com/)
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger on MRI 1.9.2+ by installing [pry-debugger](https://github.com/nixme/pry-debugger).
 
@@ -456,7 +457,7 @@ Add a plugin
 
     yav -u https://github.com/airblade/vim-rooter
 
-Delete a plugin 
+Delete a plugin
 
     ydv -u airblade/vim-rooter
 
