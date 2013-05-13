@@ -1,10 +1,14 @@
 " Make it beautiful - colors and fonts
 let s:myTheme='marelo'
 exec 'colorscheme ' . s:myTheme
-" Enforce the colors for each color scheme:
+
+" If there's a custom powerline theme too, load it. Otherwise load the
+" solarized one just so it won't look very bad.
 let s:powerlineCustom="~/.vim/colors-settings/" . s:myTheme . "-powerline.vim"
 if filereadable(expand(s:powerlineCustom))
-    exec "au VimEnter * so " . s:powerlineCustom
+  exec "au VimEnter * so " . s:powerlineCustom
+else
+  exec "au VimEnter * so ~/.vim/colors-settings/solarized-powerline.vim"
 endif
 
 let s:colorSchemeCustom="~/.vim/colors-settings/" . s:myTheme . ".vim"

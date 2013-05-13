@@ -10,10 +10,6 @@ endif
 
 set linespace=3
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
 let g:colors_name = "marelo"
 
 "hi IncSearch -- no settings --

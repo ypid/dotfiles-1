@@ -452,7 +452,7 @@ If you didn't have janus before, it is recommended to just put it in `~/.yadr/vi
 
 ### Adding your own vim plugins
 
-YADR comes with a dead simple plugin manager that just uses vundles and submodules, without any fancy config files.
+YADR comes with a dead simple plugin manager that just uses bundles and submodules, without any fancy config files.
 
 Add a plugin
 
@@ -518,6 +518,7 @@ Yadr is made possible by many awesome people, too many to list :) But here are a
  * Cleanup, auto installer: @kylewest
  * Switch from oh-my-zsh to Presto: @JeanMertz
  * Vundle migration: @duhanebel
+ * NeoBundle migration: @lfilho
 
 
 ### For more tips and tricks
