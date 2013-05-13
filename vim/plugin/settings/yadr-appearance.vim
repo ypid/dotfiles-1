@@ -22,6 +22,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+set splitright " Vertical split on right
+set splitbelow " Horizontal split on below
+
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
