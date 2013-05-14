@@ -16,17 +16,20 @@ This is a collection of best of breed tools from across the web,
 from scouring other people's dotfile repos, blogs, and projects.
 
 ## Differences of this fork with the original project:
+  * Additional support for:
+    * Mustache templating system
+    * Other vim themes than Solarized
+  * OSX config to open MacVim maximized by default
   * Splits open to the right (not left) and VSplits open to the bottom (not top)
-  * Mustache templating system support
-  * Support for other vim themes than Solarized
   * `v` alias for opening `mvim` (MacVim)
   * `<ESC>` also clears highlighting, not only `,hl`
   * Strips trailing withspace automatically upon save.
-  * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
-  * My personal vim color scheme (marelo)
-    * darker background and different colors
-    * 4 spaces indenting by default
-    * 3px line space between the lines for better readability
+  * Extra themes:
+    * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
+    * My personal vim color scheme (marelo)
+      * 4 spaces indenting by default
+      * 3px line space between the lines for better readability
+      * dark background and different colors
 
 ## What is YADR?
 
