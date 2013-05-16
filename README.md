@@ -27,6 +27,8 @@ from scouring other people's dotfile repos, blogs, and projects.
     * Splits open to the right (not left) and VSplits open to the bottom (not top)
     * `<ESC>` also clears highlighting, not only `,hl`
     * Strips trailing withspace automatically upon save
+    * Perl regex style
+    * Searches and jumps are center on the screen
     * My personal vim color scheme (marelo)
       * 4 spaces indenting by default
       * 3px line space between the lines for better readability
