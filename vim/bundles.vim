@@ -31,15 +31,18 @@ NeoBundle "vim-scripts/Specky.git"
 
 " Other languages
 NeoBundle "briancollins/vim-jst"
+NeoBundle "jelera/vim-javascript-syntax"
+NeoBundle "myhere/vim-nodejs-complete"
 NeoBundle "pangloss/vim-javascript"
+NeoBundle "itspriddle/vim-jquery.git"
 
 " Html, Xml, Css, Markdown...
 NeoBundle "aaronjensen/vim-sass-status.git"
 NeoBundle "claco/jasmine.vim"
 NeoBundle "digitaltoad/vim-jade.git"
 NeoBundle "groenewege/vim-less.git"
-NeoBundle "itspriddle/vim-jquery.git"
 NeoBundle "jtratner/vim-flavored-markdown.git"
+NeoBundle "juvenn/mustache.vim.git"
 NeoBundle "kchmck/vim-coffee-script"
 NeoBundle "kogakure/vim-sparkup.git"
 NeoBundle "nelstrom/vim-markdown-preview"

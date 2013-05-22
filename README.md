@@ -19,6 +19,9 @@ from scouring other people's dotfile repos, blogs, and projects.
   * Additional support for:
     * Mustache templating system
     * Other vim themes than Solarized
+  * More javascript goodies for vim:
+    * [Nicer JS syntax](http://github.com/jelera/vim-javascript-syntax)
+    * [NodeJS Complete](http://github.com/myhere/vim-nodejs-complete)
   * OSX config to open MacVim maximized by default
   * Splits open to the right (not left) and VSplits open to the bottom (not top)
   * `v` alias for opening `mvim` (MacVim)

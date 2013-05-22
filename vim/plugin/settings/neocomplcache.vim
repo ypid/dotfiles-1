@@ -15,7 +15,7 @@ let g:neocomplcache_auto_completion_start_length = 3
 " Map standard Ctrl-N completion to Cmd-Space
 inoremap <D-Space> <C-n>
 
-" This makes sure we use neocomplcache completefunc instead of 
+" This makes sure we use neocomplcache completefunc instead of
 " the one in rails.vim, otherwise this plugin will crap out
 let g:neocomplcache_force_overwrite_completefunc = 1
 
@@ -28,7 +28,7 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
