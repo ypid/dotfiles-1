@@ -7,7 +7,7 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_enable_smart_case = 1
 
 " default # of completions is 100, that's crazy
-let g:neocomplcache_max_list = 5
+let g:neocomplcache_max_list = 15
 
 " words less than 3 letters long aren't worth completing
 let g:neocomplcache_auto_completion_start_length = 3
@@ -27,7 +27,7 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html,markdown,mustache setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
@@ -40,3 +40,7 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
 " Prevent hanging with python: https://github.com/skwp/dotfiles/issues/163
 let g:neocomplcache_omni_patterns['python'] = ''
+
+let g:neocomplcache_dictionary_filetype_lists = {
+\ 'javascript'   : expand('~/.yadr/vim/dict/javascript.dict') .','. expand('~/.yadr/vim/bundle/vim-node/dict/node.dict'),
+\ }

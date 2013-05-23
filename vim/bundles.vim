@@ -32,7 +32,7 @@ NeoBundle "vim-scripts/Specky.git"
 " Other languages
 NeoBundle "briancollins/vim-jst"
 NeoBundle "jelera/vim-javascript-syntax"
-NeoBundle "myhere/vim-nodejs-complete"
+NeoBundle "guileen/vim-node"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "itspriddle/vim-jquery.git"
 
