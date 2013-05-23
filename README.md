@@ -16,24 +16,26 @@ This is a collection of best of breed tools from across the web,
 from scouring other people's dotfile repos, blogs, and projects.
 
 ## Differences of this fork with the original project:
-  * Additional support for:
-    * Mustache templating system
-    * Other vim themes than Solarized
-  * More javascript goodies for vim:
-    * [Nicer JS syntax](http://github.com/jelera/vim-javascript-syntax) (more colored elements)
-    * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
-    * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
-  * OSX config to open MacVim maximized by default
-  * Splits open to the right (not left) and VSplits open to the bottom (not top)
-  * `v` alias for opening `mvim` (MacVim)
-  * `<ESC>` also clears highlighting, not only `,hl`
-  * Strips trailing withspace automatically upon save.
-  * Extra themes:
-    * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
+  * VIM
+    * Additional support for:
+      * Mustache templating system
+      * Other vim themes than Solarized
+    * More javascript goodies for vim:
+      * [Nicer JS syntax](http://github.com/jelera/vim-javascript-syntax) (more colored elements)
+      * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
+      * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
+    * Splits open to the right (not left) and VSplits open to the bottom (not top)
+    * `<ESC>` also clears highlighting, not only `,hl`
+    * Strips trailing withspace automatically upon save
     * My personal vim color scheme (marelo)
       * 4 spaces indenting by default
       * 3px line space between the lines for better readability
       * dark background and different colors
+  * OSX
+    * Config to open MacVim maximized by default
+  * ZSH
+    * `v` alias for opening `mvim` (MacVim)
+    * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
 
 ## What is YADR?
 
