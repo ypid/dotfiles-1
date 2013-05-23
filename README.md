@@ -6,7 +6,7 @@
     (_______\_____|\____|_|
 
     # Yet Another Dotfile Repo v1.1
-    # Now with Prezto and Vundle!
+    # Now with Prezto and NeoBundle!
 
     sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
 
@@ -17,6 +17,7 @@ from scouring other people's dotfile repos, blogs, and projects.
 
 ## Differences of this fork with the original project:
   * VIM
+    * NeoBundle instead of Vundle
     * Additional support for:
       * Mustache templating system
       * Other vim themes than Solarized
