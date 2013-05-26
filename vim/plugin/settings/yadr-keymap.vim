@@ -62,9 +62,6 @@ map ,{ ysiw{
 vmap ,} c{ <C-R>" }<ESC>
 vmap ,{ c{<C-R>"}<ESC>
 
-" gary bernhardt's hashrocket
-imap <c-l> <space>=><space>
-
 " Change inside various enclosures with Cmd-" and Cmd-'
 " The f makes it find the enclosure so you don't have
 " to be standing inside it
@@ -77,15 +74,6 @@ nnoremap <D-]> f]ci]
 
 "Go to last edit location with ,.
 nnoremap ,. '.
-
-"When typing a string, your quotes auto complete. Move past the quote
-"while still in insert mode by hitting Ctrl-a. Example:
-"
-" type 'foo<c-a>
-"
-" the first quote will autoclose so you'll get 'foo' and hitting <c-a> will
-" put the cursor right after the quote
-imap <C-a> <esc>wa
 
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
@@ -138,9 +126,6 @@ nnoremap <silent> <C-l> <C-w>l
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
 
-" Zoom in and out of current window with ,gz
-map <silent> ,gz <C-w>o
-
 " Use numbers to pick the tab you want (like iTerm)
 map <silent> <D-1> :tabn 1<cr>
 map <silent> <D-2> :tabn 2<cr>
@@ -151,12 +136,6 @@ map <silent> <D-6> :tabn 6<cr>
 map <silent> <D-7> :tabn 7<cr>
 map <silent> <D-8> :tabn 8<cr>
 map <silent> <D-9> :tabn 9<cr>
-
-" Resize windows with arrow keys
-nnoremap <D-Up> <C-w>+
-nnoremap <D-Down> <C-w>-
-nnoremap <D-Left> <C-w><
-nnoremap <D-Right>  <C-w>>
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
 imap <silent> <C-K> <%=   %><Esc>3hi
@@ -173,14 +152,8 @@ imap <silent> <C-J> <%  %><Esc>2hi
 nnoremap <silent> ,cf :let @* = expand("%:~")<CR>
 nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
 
-"Clear current search highlight by double tapping //
-nmap <silent> // :nohlsearch<CR>
-
 "(v)im (c)ommand - execute current line as a vim command
 nmap <silent> ,vc yy:<C-f>p<C-c><CR>
-
-"(v)im (r)eload
-nmap <silent> ,vr :so %<CR>
 
 " Type ,hl or <ESC> to toggle highlighting on/off, and show current value.
 noremap ,hl :set hlsearch! hlsearch?<CR>
@@ -229,3 +202,9 @@ map <D-%> :so %<CR>
 
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
+
+" Heresy
+inoremap <c-h> <esc>I
+inoremap <c-l> <esc>A
+cnoremap <c-h> <home>
+cnoremap <c-l> <end>
