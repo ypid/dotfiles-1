@@ -1,5 +1,5 @@
 " Make it beautiful - colors and fonts
-let s:myTheme='marelo'
+let s:myTheme='badwolf'
 exec 'colorscheme ' . s:myTheme
 
 " If there's a custom powerline theme too, load it. Otherwise load the
