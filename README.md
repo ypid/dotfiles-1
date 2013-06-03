@@ -18,6 +18,7 @@ from scouring other people's dotfile repos, blogs, and projects.
 ## Differences of this fork with the original project:
   * VIM
     * NeoBundle instead of Vundle
+    * Support for [project/folder specific .vimrc configuration](https://github.com/MarcWeber/vim-addon-local-vimrc)
     * Additional support for:
       * Mustache templating system
       * Other vim themes than Solarized

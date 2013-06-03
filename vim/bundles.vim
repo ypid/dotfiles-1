@@ -103,6 +103,7 @@ NeoBundle "vim-scripts/AutoTag.git"
 NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
 NeoBundle "xsunsmile/showmarks.git"
+NeoBundle "MarcWeber/vim-addon-local-vimrc"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
