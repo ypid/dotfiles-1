@@ -5,9 +5,10 @@ set hlsearch        " Hilight searches by default
 set viminfo='100,f1 " Save up to 100 marks, enable capital marks
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
+set wrapscan        " Search wrap the file
 set showmatch
 
-" Use sane regexes.
+" Using Perl/Python regex style by default when searching
 nnoremap / /\v
 vnoremap / /\v
 
