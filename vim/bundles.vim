@@ -22,7 +22,7 @@ NeoBundleFetch "Shougo/neobundle.vim"
 " Ruby, Rails, Rake...
 " NeoBundle "astashov/vim-ruby-debugger"
 " NeoBundle "ecomba/vim-ruby-refactoring"
-" NeoBundle "skwp/vim-ruby-conque"
+NeoBundle "skwp/vim-ruby-conque"
 " NeoBundle "tpope/vim-rails.git"
 " NeoBundle "tpope/vim-rake.git"
 " NeoBundle "tpope/vim-rvm.git"
@@ -103,6 +103,7 @@ NeoBundle "vim-scripts/AutoTag.git"
 NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
 NeoBundle "xsunsmile/showmarks.git"
+NeoBundle "MarcWeber/vim-addon-local-vimrc"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
