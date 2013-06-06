@@ -27,6 +27,7 @@ from scouring other people's dotfile repos, blogs, and projects.
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
     * Splits open to the right (not left) and VSplits open to the bottom (not top)
+    * CamelCaseMotion defaults mapping (does not override vim default behaviour)
     * `<ESC>` also clears highlighting, not only `,hl`
     * Strips trailing withspace automatically upon save
     * Perl regex style
