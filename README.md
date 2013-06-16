@@ -25,6 +25,7 @@ Here are the differences with the upstream repo:
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
     * Splits open to the right (not left) and VSplits open to the bottom (not top)
+    * `Y` works as `D` and `C` (remapped to `y$`)
     * CamelCaseMotion default mappings (does not override vim's default behaviour)
     * `<ESC>` also clears highlighting, not only `,hl`
     * Strips trailing withspace automatically upon save
