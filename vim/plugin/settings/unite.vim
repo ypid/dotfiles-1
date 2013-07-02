@@ -5,11 +5,11 @@ call unite#custom#source('file_rec/async', 'max_candidates', 15)
 let g:unite_prompt = '» '
 
 nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
-vnoremap ,t :<C-u>UniteWithCursorWord -start-insert file_mru file_rec/async file/new<CR>
+vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert file_mru file_rec/async file/new<CR>
 
 " LustyJuggler-like buffer switching (mnemonic: Unite Buffer)
 nnoremap ,ub :Unite -no-start-insert -quick-match buffer<CR>
-vnoremap ,ub :<C-u>UniteWithCursorWord -no-start-insert -quick-match buffer<CR>
+vnoremap ,ub "zy:<C-u>Unite -input=<C-R>z buffer<CR>
 
 " TODO Buffer Grep!
 
