@@ -12,7 +12,14 @@ nnoremap ,ub :Unite -no-start-insert -quick-match buffer<CR>
 vnoremap ,ub :<C-u>UniteWithCursorWord -no-start-insert -quick-match buffer<CR>
 
 " TODO Buffer Grep!
-" TODO C-j and C-k for navigation C-v C-s for splitting
+
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()
+    imap <silent><buffer><expr> <C-s>     unite#do_action('bottom')
+    imap <silent><buffer><expr> <C-v>     unite#do_action('right')
+    imap <buffer> <C-j>     <C-n>
+    imap <buffer> <C-k>     <C-p>
+endfunction
 
 " Grep like search (mnemonic: Unite Grep)
 if executable('ggrep')
