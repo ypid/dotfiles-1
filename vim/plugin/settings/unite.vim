@@ -15,7 +15,7 @@ vnoremap ,ub "zy:<C-u>Unite -input=<C-R>z buffer<CR>
 
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
-    imap <silent><buffer><expr> <C-s>     unite#do_action('bottom')
+    imap <silent><buffer><expr> <C-s>     unite#do_action('below')
     imap <silent><buffer><expr> <C-v>     unite#do_action('right')
     imap <buffer> <C-j>     <C-n>
     imap <buffer> <C-k>     <C-p>
