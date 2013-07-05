@@ -6,10 +6,10 @@ let g:unite_prompt = '» '
 
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
-    imap <silent><buffer><expr> <C-s>     unite#do_action('below')
-    imap <silent><buffer><expr> <C-v>     unite#do_action('right')
-    imap <buffer> <C-j>     <C-n>
-    imap <buffer> <C-k>     <C-p>
+    map <silent><buffer><expr> <C-s>     unite#do_action('below')
+    map <silent><buffer><expr> <C-v>     unite#do_action('right')
+    map <buffer> <C-j>     <C-n>
+    map <buffer> <C-k>     <C-p>
 endfunction
 
 nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
