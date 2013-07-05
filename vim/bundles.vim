@@ -77,7 +77,6 @@ NeoBundle "vim-scripts/camelcasemotion.git"
 NeoBundle "vim-scripts/matchit.zip.git"
 
 " General vim improvements
-NeoBundle "Shougo/unite.vim"
 NeoBundle 'Shougo/vimproc', {
         \ 'build' : {
         \     'windows' : 'make -f make_mingw32.mak',
@@ -86,6 +85,7 @@ NeoBundle 'Shougo/vimproc', {
         \     'unix' : 'make -f make_unix.mak',
         \    },
         \ }
+NeoBundle "Shougo/unite.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils.git"
 NeoBundle "bogado/file-line.git"
 NeoBundle "jistr/vim-nerdtree-tabs.git"
@@ -93,7 +93,6 @@ NeoBundle "majutsushi/tagbar.git"
 NeoBundle "mattn/webapi-vim.git"
 NeoBundle "scrooloose/nerdtree.git"
 NeoBundle "scrooloose/syntastic.git"
-NeoBundle "sjbach/lusty.git"
 NeoBundle "sjl/gundo.vim"
 NeoBundle "skwp/YankRing.vim"
 NeoBundle "skwp/greplace.vim"
