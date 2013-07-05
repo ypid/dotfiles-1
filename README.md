@@ -9,13 +9,14 @@
 
     sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
 
-To get to know this project, please first refer to the [original repository/project](https://github.com/skwp/dotfiles), and then come back to my fork :-)
+To get to know this project, please first refer to the [original project](https://github.com/skwp/dotfiles), read their README and then come back to this one :-)
 
 Here are the differences with the upstream repo:
 
 ## Differences of this fork with the original project:
   * VIM
     * NeoBundle instead of Vundle
+    * [Unite](https://github.com/Shougo/unite.vim) (which by itself substituted the use of CtrlP, LustyJuggler, Ag)
     * Support for [project/folder specific .vimrc configuration](https://github.com/MarcWeber/vim-addon-local-vimrc)
     * Additional support for:
       * Mustache templating system
@@ -25,7 +26,7 @@ Here are the differences with the upstream repo:
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
     * Splits open to the right (not left) and VSplits open to the bottom (not top)
-    * `Y` works as `D` and `C` (remapped to `y$`)
+    * `Y` works as `D` and `C` (remapped to `y$` while still keeping YankRing compatibility)
     * CamelCaseMotion default mappings (does not override vim's default behaviour)
     * `<ESC>` also clears highlighting, not only `,hl`
     * Strips trailing withspace automatically upon save
