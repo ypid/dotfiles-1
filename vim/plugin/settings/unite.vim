@@ -6,10 +6,14 @@ let g:unite_prompt = '» '
 
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
-    map <silent><buffer><expr> <C-s>     unite#do_action('below')
-    map <silent><buffer><expr> <C-v>     unite#do_action('right')
-    map <buffer> <C-j>     <C-n>
-    map <buffer> <C-k>     <C-p>
+    inoremap <silent><buffer><expr> <C-s> unite#do_action('split')
+    nnoremap <silent><buffer><expr> <C-s> unite#do_action('split')
+    inoremap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
+    nnoremap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
+    inoremap <buffer> <C-j> <C-n>
+    nnoremap <buffer> <C-j> <C-n>
+    inoremap <buffer> <C-k> <C-p>
+    nnoremap <buffer> <C-k> <C-p>
 endfunction
 
 nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
