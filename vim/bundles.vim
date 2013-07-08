@@ -110,6 +110,7 @@ NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
 NeoBundle "xsunsmile/showmarks.git"
 NeoBundle "MarcWeber/vim-addon-local-vimrc"
+NeoBundle "terryma/vim-expand-region"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
