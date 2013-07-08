@@ -129,6 +129,7 @@ NeoBundle "vim-scripts/argtextobj.vim"
 NeoBundle "chrisbra/color_highlight.git"
 NeoBundle "skwp/vim-colors-solarized"
 NeoBundle "sjl/badwolf"
+NeoBundle "chriskempson/base16-vim"
 NeoBundle "skwp/vim-powerline.git"
 NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"
@@ -136,6 +137,7 @@ NeoBundle "slim-template/vim-slim.git"
 NeoBundle "bogado/file-line.git"
 " NeoBundle "tpope/vim-rvm.git"
 NeoBundle "nelstrom/vim-visual-star-search"
+
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
