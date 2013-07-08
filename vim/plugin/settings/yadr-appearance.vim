@@ -1,6 +1,5 @@
 " Make it beautiful - colors and fonts
 let s:myTheme='base16-monokai'
-" let s:myTheme='molokai'
 exec 'colorscheme ' . s:myTheme
 
 " If there's a custom powerline theme too, load it. Otherwise load the
@@ -35,10 +34,10 @@ if has("gui_running")
   " (the numbers don't show up) so I made it a VimEnter event
   autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 
-  set lines=60
-  set columns=190
+  set lines=999
+  set columns=999
 
-  set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
+  set guifont=Ubuntu\ Mono:h16,Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
