@@ -2,7 +2,6 @@
 " General vim sanity improvements
 " ========================================
 "
-"
 " alias yw to yank the entire word 'yank inner word'
 " even if the cursor is halfway inside the word
 " FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
@@ -25,7 +24,7 @@ endfunction
 " out our hands. For example, typing underscores and
 " dashes are very common, and in position that require
 " a lot of hand movement. Vim to the rescue
-"
+
 " Now using the middle finger of either hand you can type
 " underscores with apple-k or apple-d, and add Shift
 " to type dashes
@@ -160,11 +159,6 @@ nmap <silent> ,vc yy:<C-f>p<C-c><CR>
 
 " Type ,hl or <ESC> to toggle highlighting on/off, and show current value.
 noremap ,hl :set hlsearch! hlsearch?<CR>
-noremap <ESC> :set hlsearch! hlsearch?<CR>
-
-" Apple-* Highlight all occurrences of current word (like '*' but without moving)
-" http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
-nnoremap <D-*> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 
 " These are very similar keys. Typing 'a will jump to the line in the current
 " file marked with ma. However, `a will jump to the line and column marked
