@@ -55,7 +55,7 @@ NeoBundle "skwp/vim-html-escape"
 " Git related...
 NeoBundle "gregsexton/gitv"
 NeoBundle "mattn/gist-vim"
-NeoBundle "skwp/vim-git-grep-rails-partial"
+" NeoBundle "skwp/vim-git-grep-rails-partial"
 NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
@@ -88,7 +88,6 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle "Shougo/unite.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils.git"
 NeoBundle "bogado/file-line.git"
-NeoBundle "jistr/vim-nerdtree-tabs.git"
 NeoBundle "majutsushi/tagbar.git"
 NeoBundle "mattn/webapi-vim.git"
 NeoBundle "scrooloose/nerdtree.git"
@@ -128,7 +127,6 @@ NeoBundle "vim-scripts/argtextobj.vim"
 " Cosmetics, color scheme, Powerline...
 NeoBundle "chrisbra/color_highlight.git"
 NeoBundle "skwp/vim-colors-solarized"
-NeoBundle "sjl/badwolf"
 NeoBundle "chriskempson/base16-vim"
 NeoBundle "skwp/vim-powerline.git"
 NeoBundle "vim-scripts/TagHighlight.git"
@@ -136,7 +134,6 @@ NeoBundle "itspriddle/vim-jquery.git"
 NeoBundle "slim-template/vim-slim.git"
 NeoBundle "bogado/file-line.git"
 " NeoBundle "tpope/vim-rvm.git"
-NeoBundle "nelstrom/vim-visual-star-search"
 
 
 " Customization
