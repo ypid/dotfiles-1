@@ -12,10 +12,14 @@ nnoremap ,yw yiww
 nnoremap ,ow "_diwhp
 
 "make Y consistent with C and D
+" See yankring config file
 nnoremap Y y$
-function! YRRunAfterMaps()
-    nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
-endfunction
+
+" Heresy
+inoremap <c-h> <esc>I
+inoremap <c-l> <esc>A
+cnoremap <c-h> <home>
+cnoremap <c-l> <end>
 
 " ========================================
 " RSI Prevention - keyboard remaps
@@ -33,55 +37,8 @@ imap <silent> <D-d> _
 imap <silent> <D-K> -
 imap <silent> <D-D> -
 
-" ,# Surround a word with #{ruby interpolation}
-map ,# ysiw#
-vmap ,# c#{<C-R>"}<ESC>
-
-" ," Surround a word with "quotes"
-map ," ysiw"
-vmap ," c"<C-R>""<ESC>
-
-" ,' Surround a word with 'single quotes'
-map ,' ysiw'
-vmap ,' c'<C-R>"'<ESC>
-
-" ,) or ,( Surround a word with (parens)
-" The difference is in whether a space is put in
-map ,( ysiw(
-map ,) ysiw)
-vmap ,( c( <C-R>" )<ESC>
-vmap ,) c(<C-R>")<ESC>
-
-" ,[ Surround a word with [brackets]
-map ,] ysiw]
-map ,[ ysiw[
-vmap ,[ c[ <C-R>" ]<ESC>
-vmap ,] c[<C-R>"]<ESC>
-
-" ,{ Surround a word with {braces}
-map ,} ysiw}
-map ,{ ysiw{
-vmap ,} c{ <C-R>" }<ESC>
-vmap ,{ c{<C-R>"}<ESC>
-
-" Change inside various enclosures with Cmd-" and Cmd-'
-" The f makes it find the enclosure so you don't have
-" to be standing inside it
-nnoremap <D-'> f'ci'
-nnoremap <D-"> f"ci"
-nnoremap <D-(> f(ci(
-nnoremap <D-)> f)ci)
-nnoremap <D-[> f[ci[
-nnoremap <D-]> f]ci]
-
 "Go to last edit location with ,.
 nnoremap ,. '.
-
-" ==== NERD tree
-" Cmd-Shift-N for nerd tree
-nmap <D-N> :NERDTreeToggle<CR>
-" Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
 " ,oq to open it back up (rare)
@@ -98,11 +55,6 @@ autocmd FileType rspec map <buffer> <D-j> }
 autocmd FileType rspec map <buffer> <D-k> {
 autocmd FileType javascript map <buffer> <D-k> }
 autocmd FileType javascript map <buffer> <D-j> {
-
-
-" Command-/ to toggle comments
-map <D-/> :TComment<CR>
-imap <D-/> <Esc>:TComment<CR>i
 
 "GitGrep - open up a git grep line, with a quote started for the search
 nnoremap ,gg :GitGrep ""<left>
@@ -138,12 +90,6 @@ map <silent> <D-6> :tabn 6<cr>
 map <silent> <D-7> :tabn 7<cr>
 map <silent> <D-8> :tabn 8<cr>
 map <silent> <D-9> :tabn 9<cr>
-
-" create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
-
-" create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
 
 " ============================
 " Shortcuts for everyday tasks
@@ -181,16 +127,6 @@ vmap <D-A> :Tabularize /
 nmap ,sj :SplitjoinSplit<cr>
 nmap ,sk :SplitjoinJoin<cr>
 
-" ============================
-" vim-ruby-conque
-" ============================
-" Cmd-Shift-R for RSpec
-nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
-" Cmd-Shift-L for RSpec Current Line
-nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
-" ,Cmd-R for Last conque command
-nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>
-
 " Get the current highlight group. Useful for then remapping the color
 map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
 
@@ -199,9 +135,3 @@ map <D-%> :so %<CR>
 
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
-
-" Heresy
-inoremap <c-h> <esc>I
-inoremap <c-l> <esc>A
-cnoremap <c-h> <home>
-cnoremap <c-l> <end>

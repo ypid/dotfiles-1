@@ -4,6 +4,6 @@
 " and repeatedly pasting it. This changes the paste
 " command in visual mode so that it doesn't overwrite
 " whatever is in your paste buffer.
-"
+" See yankring config file
 vnoremap p "_dP
 
