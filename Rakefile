@@ -21,7 +21,7 @@ task :install => [:submodule_init, :submodules] do
   file_operation(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   file_operation(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('vim configuration (highly recommended)')
-    file_operation(Dir.glob('{vim,vimrc}')) 
+    file_operation(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_neobundle"].execute
   end
 
@@ -63,7 +63,7 @@ task :submodules do
 
     run %{
       cd $HOME/.yadr
-      git submodule foreach 'git fetch origin; git checkout master; git reset --hard origin/master; git submodule update --recursive; git clean -df'
+      git submodule update --recursive
       git clean -df
     }
     puts
@@ -74,7 +74,7 @@ desc "Performs migration from pathogen to NeoBundle"
 task :neobundle_migration_from_pathogen do
   puts "========================================================"
   puts "Migrating from pathogen to NeoBundle vim plugin manager."
-  puts "This will move the old .vim/bundle directory to" 
+  puts "This will move the old .vim/bundle directory to"
   puts ".vim/bundle.old and replacing all your vim plugins with"
   puts "the standard set of plugins. You will then be able to "
   puts "manage your vim's plugin configuration by editing the "
@@ -115,7 +115,7 @@ task :install_neobundle do
   puts "======================================================"
 
   puts ""
-  
+
   run %{
     cd $HOME/.yadr
     git clone https://github.com/Shougo/neobundle.vim #{File.join('vim','bundle', 'neobundle.vim')}
@@ -200,7 +200,7 @@ def install_term_theme
   message = "I've found #{profiles.size} #{profiles.size>1 ? 'profiles': 'profile'} on your iTerm2 configuration, which one would you like to apply the Solarized theme to?"
   profiles << 'All'
   selected = ask message, profiles
-  
+
   if selected == 'All'
     (profiles.size-1).times { |idx| apply_theme_to_iterm_profile_idx idx, color_scheme_file }
   else
@@ -231,7 +231,7 @@ def ask(message, values)
     else
       break
     end
-  end 
+  end
   selection = selection.to_i-1
   values[selection]
 end
