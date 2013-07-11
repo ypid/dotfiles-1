@@ -6,17 +6,21 @@ let g:unite_prompt = '» '
 
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
-    map <silent><buffer><expr> <C-s>     unite#do_action('below')
-    map <silent><buffer><expr> <C-v>     unite#do_action('right')
-    map <buffer> <C-j>     <C-n>
-    map <buffer> <C-k>     <C-p>
+    nnoremap <silent><buffer><expr> <C-s>     unite#do_action('split')
+    nnoremap <silent><buffer><expr> <C-v>     unite#do_action('vsplit')
+    inoremap <silent><buffer><expr> <C-s>     unite#do_action('split')
+    inoremap <silent><buffer><expr> <C-v>     unite#do_action('vsplit')
+    nnoremap <buffer> <C-j>     <Down>
+    nnoremap <buffer> <C-k>     <Up>
+    inoremap <buffer> <C-j>     <Down>
+    inoremap <buffer> <C-k>     <Up>
 endfunction
 
 nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
 vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert file_mru file_rec/async file/new<CR>
 
 "
-" Buffer listing/switching (mnemonic: Unite Buffer)
+" Buffer listing/switching (mnemonic: Unite Buffers)
 "
 nnoremap ,ub :Unite -no-start-insert -quick-match buffer<CR>
 vnoremap ,ub "zy:<C-u>Unite -input=<C-R>z buffer<CR>
