@@ -24,8 +24,9 @@ Here are the differences with the upstream repo:
     * Surrounding mappings easier and faster to type
     * A more purged vim/plugins/settings folder (getting rid of stuff that I never use)
     * All custom mappings that manipulated registers were not working as YR was overriding them (for eg. `Y`). Now it works.
+    * "Stop visual paste insanity" now works
     * Custom keymaps for a specif plugin live on its config file, for easier finding.
-    * [Unite](https://github.com/Shougo/unite.vim) (which by itself substituted the use of CtrlP, LustyJuggler, Ag)
+    * [Unite](https://github.com/Shougo/unite.vim) (which got rid of CtrlP, LustyJuggler and Ag)
     * Support for [project/folder specific .vimrc configuration](https://github.com/MarcWeber/vim-addon-local-vimrc)
     * Support for Mustache templating system
     * Support for other vim themes than Solarized (right now my personal theme and base16 themes are included)
