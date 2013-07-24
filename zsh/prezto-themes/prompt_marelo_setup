@@ -23,9 +23,9 @@ function prompt_marelo_precmd {
     git-info
   fi
 
-  # Get ruby information
-  if (( $+functions[ruby-info] )); then
-    ruby-info
+  # Get node information
+  if (( $+functions[node-info] )); then
+    node-info
   fi
 }
 
@@ -38,30 +38,20 @@ function prompt_marelo_setup {
 
   add-zsh-hook precmd prompt_marelo_precmd
 
-  # Use extended color pallete if available.
-  __COLORS=(
-      "%F{cyan}"
-      "%F{yellow}"
-      "%F{magenta}"
-      "%F{red}"
-      "%F{green}"
-      "%F{blue}"
-  )
-
   # git
-  zstyle ':prezto:module:git:info:branch' format "${__COLORS[1]}%b%f"
-  zstyle ':prezto:module:git:info:added' format "${__COLORS[5]} ✚%f"
-  zstyle ':prezto:module:git:info:deleted' format "${__COLORS[4]} ✖%f"
-  zstyle ':prezto:module:git:info:modified' format "${__COLORS[4]} ☲%f"
-  zstyle ':prezto:module:git:info:untracked' format "${__COLORS[2]} ✭%f"
-  zstyle ':prezto:module:git:info:clean' format "${__COLORS[5]} ✔%f"
-  zstyle ':prezto:module:git:info:keys' format 'prompt' '(%b%d%a%m%u)'
+  zstyle ':prezto:module:git:info:branch' format "%F{cyan}%b%f"
+  zstyle ':prezto:module:git:info:added' format "%F{green} ✚%f"
+  zstyle ':prezto:module:git:info:deleted' format "%F{red} ✖%f"
+  zstyle ':prezto:module:git:info:modified' format "%F{red} ☲%f"
+  zstyle ':prezto:module:git:info:untracked' format "%F{yellow} ✭%f"
+  zstyle ':prezto:module:git:info:clean' format "%F{green} ✔%f"
+  zstyle ':prezto:module:git:info:keys' format 'prompt' '[%b%d%a%m%u%C]'
 
-  # ruby info (rvm, rbenv)
-  zstyle ':prezto:module:ruby:info:version' format '[%v]'
+  # node info
+  zstyle ':prezto:module:node:info:version' format '[node %v]'
 
-  PROMPT="${__COLORS[6]}%~%f "'$git_info[prompt]'"$ "
-  RPROMPT='%F{blue}${ruby_info[version]}'
+  PROMPT="%F{blue}%~%f "'$git_info[prompt]'"$ "
+  RPROMPT='%F{blue}${node_info[version]}'
 }
 
 prompt_marelo_setup "$@"
