@@ -11,8 +11,9 @@
 #   steeef <steeef@gmail.com>
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #   Yan Pritzker <yan@pritzker.ws>
+#   Luiz Filho <lfilho@gmail.com>
 
-function prompt_skwp_precmd {
+function prompt_marelo_precmd {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
 
@@ -28,47 +29,56 @@ function prompt_skwp_precmd {
   fi
 }
 
-function prompt_skwp_setup {
+function prompt_marelo_setup {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
   prompt_opts=(cr percent subst)
 
   autoload -Uz add-zsh-hook
 
-  add-zsh-hook precmd prompt_skwp_precmd
+  add-zsh-hook precmd prompt_marelo_precmd
 
   # Use extended color pallete if available.
-  if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
-    __PROMPT_SKWP_COLORS=(
-      "%F{81}"  # turquoise
-      "%F{166}" # orange
-      "%F{135}" # purple
-      "%F{161}" # hotpink
-      "%F{118}" # limegreen
-    )
-  else
-    __PROMPT_SKWP_COLORS=(
+  __COLORS=(
       "%F{cyan}"
       "%F{yellow}"
       "%F{magenta}"
       "%F{red}"
       "%F{green}"
-    )
-  fi
+      "%F{blue}"
+  )
 
   # git
-  zstyle ':prezto:module:git:info:branch' format "${__PROMPT_SKWP_COLORS[1]}%b%f"
-  zstyle ':prezto:module:git:info:added' format "${__PROMPT_SKWP_COLORS[5]}●%f"
-  zstyle ':prezto:module:git:info:deleted' format "${__PROMPT_SKWP_COLORS[2]}●%f"
-  zstyle ':prezto:module:git:info:modified' format "${__PROMPT_SKWP_COLORS[4]}●%f"
-  zstyle ':prezto:module:git:info:untracked' format "${__PROMPT_SKWP_COLORS[3]}●%f"
+  zstyle ':prezto:module:git:info:branch' format "${__COLORS[1]}%b%f"
+  zstyle ':prezto:module:git:info:added' format "${__COLORS[5]} ✚%f"
+  zstyle ':prezto:module:git:info:deleted' format "${__COLORS[4]} ✖%f"
+  zstyle ':prezto:module:git:info:modified' format "${__COLORS[4]} ☲%f"
+  zstyle ':prezto:module:git:info:untracked' format "${__COLORS[2]} ✭%f"
+  zstyle ':prezto:module:git:info:clean' format "${__COLORS[5]} ✔%f"
   zstyle ':prezto:module:git:info:keys' format 'prompt' '(%b%d%a%m%u)'
 
   # ruby info (rvm, rbenv)
   zstyle ':prezto:module:ruby:info:version' format '[%v]'
 
-  PROMPT="${__PROMPT_SKWP_COLORS[5]}%~%f "'$git_info[prompt]'"$ "
+  PROMPT="${__COLORS[6]}%~%f "'$git_info[prompt]'"$ "
   RPROMPT='%F{blue}${ruby_info[version]}'
 }
 
-prompt_skwp_setup "$@"
+prompt_marelo_setup "$@"
+#
+# ZSH_THEME_GIT_PROMPT_PREFIX=" ☁  %{$fg[red]%}"
+# ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+# ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} ☂" # Ⓓ
+# ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭" # ⓣ
+# ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ☀" # Ⓞ
+#
+# ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✚" # ⓐ ⑃
+# ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ⚡"  # ⓜ ⑁
+# ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖" # ⓧ ⑂
+# ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%} ➜" # ⓡ ⑄
+# ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ♒" # ⓤ ⑊
+#
+# # More symbols to choose from:
+# # ☀ ✹ ☄ ♆ ♀ ♁ ♐ ♇ ♈ ♉ ♚ ♛ ♜ ♝ ♞ ♟ ♠ ♣ ⚢ ⚲ ⚳ ⚴ ⚥ ⚤ ⚦ ⚒ ⚑ ⚐ ♺ ♻ ♼ ☰ ☱ ☲ ☳ ☴ ☵ ☶ ☷
+# # ✡ ✔ ✖ ✚ ✱ ✤ ✦ ❤ ➜ ➟ ➼ ✂ ✎ ✐ ⨀ ⨁ ⨂ ⨍ ⨎ ⨏ ⨷ ⩚ ⩛ ⩡ ⩱ ⩲ ⩵  ⩶ ⨠
+# # ⬅ ⬆ ⬇ ⬈ ⬉ ⬊ ⬋ ⬒ ⬓ ⬔ ⬕ ⬖ ⬗ ⬘ ⬙ ⬟  ⬤ 〒 ǀ ǁ ǂ ĭ Ť Ŧ
