@@ -126,9 +126,7 @@ NeoBundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
 NeoBundle "chrisbra/color_highlight.git"
-NeoBundle "skwp/vim-colors-solarized"
-" NeoBundle "chriskempson/base16-vim"
-NeoBundle "sickill/vim-monokai"
+NeoBundle "chriskempson/base16-vim"
 NeoBundle "skwp/vim-powerline.git"
 NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"

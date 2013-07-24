@@ -41,8 +41,11 @@ Here are the differences with the upstream repo:
     * My personal zsh prompt theme (marelo) - same as skwp's one but without the `user@machine` bit (not relevant for me)
 
 ## TODOs
-  * Move settings from plugin/ into explict `:so`s calls from .vimrc
-  * Make it look / behave better form the terminal
-  * Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
+  [ ] Move settings from plugin/ into explict `:so`s calls from .vimrc
+  [x] Make it look / behave better form the terminal
+  [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
+  [ ] Try airline instead powerline
+  [ ] Auto set the iTerm color theme without asking for confirmation
+  [ ] Make it work/install on linux too
 
 ## Contributions are very welcome

@@ -37,7 +37,7 @@ if has("gui_running")
   set lines=999
   set columns=999
 
-  set guifont=Monaco\ for\ Powerline:h13,Monaco:h17,Inconsolata\ XL:h17,Inconsolata:h20
+  set guifont=Monaco\ for\ Powerline:h13,Monaco:h13,Inconsolata\ XL:h17,Inconsolata:h20
 else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
