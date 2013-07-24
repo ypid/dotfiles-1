@@ -1,3 +1,10 @@
+"Don't wrap lines
+set nowrap
+"Wrap lines at convenient points
+set linebreak
+
+" When needed, then wrap it nicely:
+
 " http://vimcasts.org/episodes/soft-wrapping-text/
 function! SetupWrapping()
   set wrap linebreak nolist
