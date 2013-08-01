@@ -7,12 +7,12 @@ exec 'colorscheme ' . s:myTheme
 
 " If there's a custom airline theme too, load it. Otherwise load the
 " solarized one just so it won't look very bad.
-let s:airlineCustom="~/.vim/colors-settings/" . s:myTheme . "-airline.vim"
+let s:airlineCustom="~/.vim/custom-settings/colors/" . s:myTheme . "-airline.vim"
 if filereadable(expand(s:airlineCustom))
     exec "au VimEnter * so " . s:airlineCustom
 endif
 
-let s:colorSchemeCustom="~/.vim/colors-settings/" . s:myTheme . ".vim"
+let s:colorSchemeCustom="~/.vim/custom-settings/colors/" . s:myTheme . ".vim"
 if filereadable(expand(s:colorSchemeCustom))
     exec "au VimEnter * so " . s:colorSchemeCustom
 endif
