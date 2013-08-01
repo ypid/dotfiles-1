@@ -15,7 +15,7 @@ so ~/.yadr/vim/custom-settings/yadr-sudo-write.vim
 so ~/.yadr/vim/custom-settings/wrapping.vim
 so ~/.yadr/vim/custom-settings/grep.vim
 
-" Custom made functios, commands, etc
+" Custom made functions, commands, etc
 so ~/.yadr/vim/custom-settings/yadr-requirejs-styler.vim
 so ~/.yadr/vim/custom-settings/yadr-whitespace-killer.vim
 so ~/.yadr/vim/custom-settings/yadr-window-killer.vim
@@ -52,3 +52,4 @@ so ~/.yadr/vim/custom-settings/vim-indent-guides.vim
 so ~/.yadr/vim/custom-settings/vim-ruby-conque.vim
 so ~/.yadr/vim/custom-settings/vim-ruby-debugger.vim
 so ~/.yadr/vim/custom-settings/yankring.vim
+so ~/.yadr/vim/custom-settings/airline.vim

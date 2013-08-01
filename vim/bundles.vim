@@ -124,10 +124,10 @@ NeoBundle "nathanaelkane/vim-indent-guides"
 NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "vim-scripts/argtextobj.vim"
 
-" Cosmetics, color scheme, Powerline...
+" Cosmetics, color scheme, Airline...
 NeoBundle "chrisbra/color_highlight.git"
 NeoBundle "chriskempson/base16-vim"
-NeoBundle "skwp/vim-powerline.git"
+NeoBundle "bling/vim-airline.git"
 NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"
 NeoBundle "slim-template/vim-slim.git"

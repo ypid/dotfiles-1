@@ -45,7 +45,7 @@ Here are the differences with the upstream repo:
   - [x] Move settings from plugin/ into explict `:so`s calls from .vimrc
   - [x] Make it look / behave better from the terminal
   - [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
-  - [ ] Try airline instead powerline
+  - [x] Try airline instead powerline
   - [ ] Auto set the iTerm color theme without asking for confirmation
   - [ ] Make it work/install on linux too
 

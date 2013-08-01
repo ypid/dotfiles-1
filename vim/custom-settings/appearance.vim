@@ -1,16 +1,15 @@
 set background=dark
+set laststatus=2 "always show the statusline
 
 " Make it beautiful - colors and fonts
 let s:myTheme='base16-monokai'
 exec 'colorscheme ' . s:myTheme
 
-" If there's a custom powerline theme too, load it. Otherwise load the
+" If there's a custom airline theme too, load it. Otherwise load the
 " solarized one just so it won't look very bad.
-let s:powerlineCustom="~/.vim/colors-settings/" . s:myTheme . "-powerline.vim"
-if filereadable(expand(s:powerlineCustom))
-    exec "au VimEnter * so " . s:powerlineCustom
-else
-    exec "au VimEnter * so ~/.vim/colors-settings/solarized-powerline.vim"
+let s:airlineCustom="~/.vim/colors-settings/" . s:myTheme . "-airline.vim"
+if filereadable(expand(s:airlineCustom))
+    exec "au VimEnter * so " . s:airlineCustom
 endif
 
 let s:colorSchemeCustom="~/.vim/colors-settings/" . s:myTheme . ".vim"
