@@ -1,4 +1,3 @@
-" via: http://rails-bestpractices.com/posts/60-remove-trailing-whitespace
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
@@ -12,3 +11,11 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" Delete blank lines after a { or before a }
+function! <SID>KillPaddingLines()
+    %s/^\s*\n\ze\s*}//ge
+    :%s/{\n\s*\ze\n/{/ge
+endfunction
+
+command! KillPaddingLines call <SID>KillPaddingLines()
