@@ -15,7 +15,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Delete blank lines after a { or before a }
 function! <SID>KillPaddingLines()
     %s/^\s*\n\ze\s*}//ge
-    :%s/{\n\s*\ze\n/{/ge
+    %s/{\n\s*\ze\n/{/ge
 endfunction
 
 command! KillPaddingLines call <SID>KillPaddingLines()
