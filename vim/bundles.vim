@@ -37,7 +37,6 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "itspriddle/vim-jquery.git"
 
 " Html, Xml, Css, Markdown...
-NeoBundle "aaronjensen/vim-sass-status.git"
 NeoBundle "claco/jasmine.vim"
 " NeoBundle "digitaltoad/vim-jade.git"
 " NeoBundle "groenewege/vim-less.git"
@@ -75,16 +74,17 @@ NeoBundle "tpope/vim-bundler"
 NeoBundle "vim-scripts/IndexedSearch"
 NeoBundle "vim-scripts/camelcasemotion.git"
 NeoBundle "vim-scripts/matchit.zip.git"
+NeoBundle "terryma/vim-multiple-cursors"
 
 " General vim improvements
 NeoBundle 'Shougo/vimproc', {
-        \ 'build' : {
-        \     'windows' : 'make -f make_mingw32.mak',
-        \     'cygwin' : 'make -f make_cygwin.mak',
-        \     'mac' : 'make -f make_mac.mak',
-        \     'unix' : 'make -f make_unix.mak',
-        \    },
-        \ }
+            \ 'build' : {
+            \     'windows' : 'make -f make_mingw32.mak',
+            \     'cygwin' : 'make -f make_cygwin.mak',
+            \     'mac' : 'make -f make_mac.mak',
+            \     'unix' : 'make -f make_unix.mak',
+            \    },
+            \ }
 NeoBundle "Shougo/unite.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils.git"
 NeoBundle "bogado/file-line.git"

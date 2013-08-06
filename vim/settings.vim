@@ -53,3 +53,4 @@ so ~/.yadr/vim/custom-settings/vim-ruby-conque.vim
 so ~/.yadr/vim/custom-settings/vim-ruby-debugger.vim
 so ~/.yadr/vim/custom-settings/yankring.vim
 so ~/.yadr/vim/custom-settings/airline.vim
+so ~/.yadr/vim/custom-settings/vim-multiple-cursors.vim
