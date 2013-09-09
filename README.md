@@ -42,11 +42,12 @@ Here are the differences with the upstream repo:
     * My personal zsh prompt theme (marelo)
 
 ## TODOs
-  - [x] Move settings from plugin/ into explict `:so`s calls from .vimrc
-  - [x] Make it look / behave better from the terminal
-  - [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
-  - [x] Try airline instead powerline
-  - [ ] Auto set the iTerm color theme without asking for confirmation
-  - [ ] Make it work/install on linux too
+  * [x] Move settings from plugin/ into explict `:so`s calls from .vimrc
+  * [x] Make it look / behave better from the terminal
+  * [x] Try airline instead powerline
+  * [x] Remove old pathogen/vundle migration
+  * [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
+  * [ ] Auto set the iTerm color theme without asking for confirmation
+  * [ ] Make it work/install on linux too
 
 ## Contributions are very welcome
