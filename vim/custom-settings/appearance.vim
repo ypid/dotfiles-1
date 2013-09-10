@@ -2,7 +2,7 @@ set background=dark
 set laststatus=2 "always show the statusline
 
 " Make it beautiful - colors and fonts
-let s:myTheme='base16-monokai'
+let s:myTheme='molokai'
 exec 'colorscheme ' . s:myTheme
 
 " If there's a custom airline theme too, load it. Otherwise load the

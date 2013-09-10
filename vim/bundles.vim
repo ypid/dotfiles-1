@@ -125,7 +125,8 @@ NeoBundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Airline...
 NeoBundle "chrisbra/color_highlight.git"
-NeoBundle "chriskempson/base16-vim"
+NeoBundle "tomasr/molokai"
+" NeoBundle "chriskempson/base16-vim"
 NeoBundle "bling/vim-airline.git"
 NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"
