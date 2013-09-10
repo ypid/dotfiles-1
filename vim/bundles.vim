@@ -31,7 +31,6 @@ NeoBundle "skwp/vim-ruby-conque"
 
 " Other languages
 NeoBundle "briancollins/vim-jst"
-NeoBundle "jelera/vim-javascript-syntax"
 NeoBundle "guileen/vim-node"
 NeoBundle "pangloss/vim-javascript"
 NeoBundle "itspriddle/vim-jquery.git"
