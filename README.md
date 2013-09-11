@@ -5,7 +5,7 @@
      _____| / ___ ( (_| | |
     (_______\_____|\____|_|
 
-    # Yet Another Dotfile Repo
+    # Yet Another Dotfile Repo - Marelo version
 
     sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
 
@@ -17,7 +17,7 @@ Here are the differences with the upstream repo:
   * VIM
     * Ruby stuff commented out (not my main dev language atm)
     * More javascript goodies for vim (my main dev language atm):
-      * [Nicer JS syntax](http://github.com/jelera/vim-javascript-syntax) (more colored elements)
+      * More elements highlighted
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
     * NeoBundle instead of Vundle
@@ -33,7 +33,7 @@ Here are the differences with the upstream repo:
     * Splits open to the right (not left) and VSplits open to the bottom (not top)
     * CamelCaseMotion default mappings (does not override vim's default behaviour)
     * Strips trailing withespace automatically upon save
-    * Perl regex style
+    * Perl regex style by default
     * Config files are externalized in settings.vim instead of auto-loaded under plugin/ folder. Now we have more control and flexibility of ther runtime path order.
   * OSX
     * Config to open MacVim maximized by default
@@ -42,12 +42,8 @@ Here are the differences with the upstream repo:
     * My personal zsh prompt theme (marelo)
 
 ## TODOs
-  * [x] Move settings from plugin/ into explict `:so`s calls from .vimrc
-  * [x] Make it look / behave better from the terminal
-  * [x] Try airline instead powerline
-  * [x] Remove old pathogen/vundle migration
-  * [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
-  * [ ] Auto set the iTerm color theme without asking for confirmation
-  * [ ] Make it work/install on linux too
+  * Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
+  * Auto set the iTerm color theme without asking for confirmation
+  * Improve Mac/Linux interoperability
 
 ## Contributions are very welcome
