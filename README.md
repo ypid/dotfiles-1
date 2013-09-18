@@ -15,14 +15,15 @@ Here are the differences with the upstream repo:
 
 ## Differences of this fork with the original project:
   * VIM
+    * Latest stable VIM available in `brew` (currently, > 7.4) is installed with support to `if_lua` and custom file icons
     * Ruby stuff commented out (not my main dev language atm)
     * More javascript goodies for vim (my main dev language atm):
       * [Nicer JS syntax](http://github.com/jelera/vim-javascript-syntax) (more colored elements)
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
-    * NeoBundle instead of Vundle
-    * Surrounding mappings easier and faster to type
-    * A more purged vim/plugins/settings folder (getting rid of stuff that I never use)
+    * [NeoBundle](https://github.com/Shougo/neobundle.vim) instead of Vundle
+    * [NeoComplete](https://github.com/Shougo/neocomplete.vim) instead NeoComplcache
+    * A more purged `vim/plugins/settings` folder (getting rid of stuff that I never use)
     * All custom mappings that manipulated registers were not working as YR was overriding them (for eg. `Y`). Now it works.
     * "Stop visual paste insanity" now works
     * Custom keymaps for a specif plugin live on its config file, for easier finding.
@@ -44,9 +45,9 @@ Here are the differences with the upstream repo:
 ## TODOs
   - [x] Move settings from plugin/ into explict `:so`s calls from .vimrc
   - [x] Make it look / behave better from the terminal
-  - [ ] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
+  - [x] Try neocomplete instead of neocomplcache (need to compile vim with lua interface support)
   - [x] Try airline instead powerline
   - [ ] Auto set the iTerm color theme without asking for confirmation
-  - [ ] Make it work/install on linux too
+  - [ ] Make it work better / install brew dependecies on linux
 
 ## Contributions are very welcome
