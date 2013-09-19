@@ -32,7 +32,7 @@ so ~/.yadr/vim/custom-settings/gh-markdown.vim
 so ~/.yadr/vim/custom-settings/git-grep.vim
 so ~/.yadr/vim/custom-settings/gundo.vim
 so ~/.yadr/vim/custom-settings/jquery.vim
-so ~/.yadr/vim/custom-settings/neocomplcache.vim
+so ~/.yadr/vim/custom-settings/neocomplete.vim
 so ~/.yadr/vim/custom-settings/NERDtree.vim
 so ~/.yadr/vim/custom-settings/next-textobject.vim
 so ~/.yadr/vim/custom-settings/persistent-undo.vim
