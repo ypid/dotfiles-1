@@ -15,12 +15,12 @@ Here are the differences with the upstream repo:
 
 ## Differences of this fork with the original project:
   * VIM
-    * Latest stable VIM available in `brew` (currently, > 7.4) is installed with support to `if_lua` and custom file icons
+    * Vim not only is now installed, but it is installed with support to `if_lua` and custom file icons. The instalations takes the lastest stable version in `brew` (currently, > 7.4)
     * Ruby stuff commented out (not my main dev language atm)
     * More javascript goodies for vim (my main dev language atm):
       * More elements highlighted
-      * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplcache hook
-      * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplcache hook
+      * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplete hook
+      * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplete hook
     * [NeoBundle](https://github.com/Shougo/neobundle.vim) instead of Vundle
     * [NeoComplete](https://github.com/Shougo/neocomplete.vim) instead NeoComplcache
     * A more purged `vim/plugins/settings` folder (getting rid of stuff that I never use)
