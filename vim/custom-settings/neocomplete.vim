@@ -16,8 +16,6 @@ function! s:my_cr_function()
   "return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 endfunction
 
-" <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <ESC>.
