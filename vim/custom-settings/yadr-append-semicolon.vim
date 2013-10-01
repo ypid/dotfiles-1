@@ -2,7 +2,7 @@
 function! s:appendSemiColon()
   if getline('.') !~ ';$'
     let original_cursor_position = getpos('.')
-    exec("s/$/;/")
+    exec("s/,\\?$/;/")
     call setpos('.', original_cursor_position)
   endif
 endfunction
