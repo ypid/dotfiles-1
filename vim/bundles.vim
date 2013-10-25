@@ -59,6 +59,7 @@ NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
 
 " General text editing improvements...
+NeoBundle "lfilho/cosco.vim"
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
 NeoBundle "Shougo/neocomplete.git"

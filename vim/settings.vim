@@ -19,9 +19,9 @@ so ~/.yadr/vim/custom-settings/grep.vim
 so ~/.yadr/vim/custom-settings/yadr-requirejs-styler.vim
 so ~/.yadr/vim/custom-settings/yadr-whitespace-killer.vim
 so ~/.yadr/vim/custom-settings/yadr-window-killer.vim
-so ~/.yadr/vim/custom-settings/yadr-append-semicolon.vim
 
 " Plugins configs
+so ~/.yadr/vim/custom-settings/cosco.vim
 so ~/.yadr/vim/custom-settings/tabularize.vim
 so ~/.yadr/vim/custom-settings/split-join.vim
 so ~/.yadr/vim/custom-settings/autotag.vim
