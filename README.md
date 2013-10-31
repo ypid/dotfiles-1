@@ -21,6 +21,7 @@ Here are the differences with the upstream repo:
       * More elements highlighted
       * [NodeJS Dictionary](http://github.com/guileen/vim-node) + neocomplete hook
       * [Javascript Dictionary](https://raw.github.com/cooldaemon/myhome/master/.vim/dict/javascript.dict) + neocomplete hook
+      * [Cosco.vim](http://github.com/lfilho/cosco.vim) for comma and semi-colon insertion bliss
     * [NeoBundle](https://github.com/Shougo/neobundle.vim) instead of Vundle
     * [NeoComplete](https://github.com/Shougo/neocomplete.vim) instead NeoComplcache
     * A more purged `vim/plugins/settings` folder (getting rid of stuff that I never use)
