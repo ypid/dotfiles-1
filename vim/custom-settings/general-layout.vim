@@ -9,6 +9,7 @@ set expandtab
 
 set splitright " Vertical split on right
 set splitbelow " Horizontal split on below
+set showtabline=2 " Always display tabline > prevents window resizing when closing down to just one tab
 
 filetype plugin on
 filetype indent on
