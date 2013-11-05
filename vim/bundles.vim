@@ -17,8 +17,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " let NeoBundle manage NeoBundle (required)
 NeoBundleFetch "Shougo/neobundle.vim"
 
-" All your bundles here
-
 " Ruby, Rails, Rake...
 " NeoBundle "astashov/vim-ruby-debugger"
 " NeoBundle "ecomba/vim-ruby-refactoring"
@@ -60,6 +58,7 @@ NeoBundle "tpope/vim-git"
 
 " General text editing improvements...
 NeoBundle "lfilho/cosco.vim"
+NeoBundle "AndrewRadev/sideways.vim"
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
 NeoBundle "Shougo/neocomplete.git"

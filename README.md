@@ -24,7 +24,7 @@ Here are the differences with the upstream repo:
       * [Cosco.vim](http://github.com/lfilho/cosco.vim) for comma and semi-colon insertion bliss
     * [NeoBundle](https://github.com/Shougo/neobundle.vim) instead of Vundle
     * [NeoComplete](https://github.com/Shougo/neocomplete.vim) instead NeoComplcache
-    * A more purged `vim/plugins/settings` folder (getting rid of stuff that I never use)
+    * [Sideways.vim](https://github.com/AndrewRadev/sideways.vim)
     * All custom mappings that manipulated registers were not working as YR was overriding them (for eg. `Y`). Now it works.
     * "Stop visual paste insanity" now works
     * Custom keymaps for a specif plugin live on its config file, for easier finding.
