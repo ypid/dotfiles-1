@@ -1,5 +1,6 @@
 set background=dark
 set laststatus=2 "always show the statusline
+set cursorline
 
 " Make it beautiful - colors and fonts
 let s:myTheme='molokai'
