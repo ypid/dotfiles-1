@@ -42,7 +42,7 @@ nnoremap ,. '.
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
 " ,oq to open it back up (rare)
-nmap <silent> ,qc :CloseSingleConque<CR>:cclose<CR>
+nmap <silent> ,qc :cclose<CR>
 nmap <silent> ,qo :copen<CR>
 
 " move up/down quickly by using Cmd-j, Cmd-k

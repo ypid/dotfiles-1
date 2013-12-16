@@ -25,7 +25,6 @@ so ~/.yadr/vim/custom-settings/cosco.vim
 so ~/.yadr/vim/custom-settings/tabularize.vim
 so ~/.yadr/vim/custom-settings/split-join.vim
 so ~/.yadr/vim/custom-settings/autotag.vim
-so ~/.yadr/vim/custom-settings/conqueterm.vim
 so ~/.yadr/vim/custom-settings/easymotion.vim
 so ~/.yadr/vim/custom-settings/fugitive.vim
 so ~/.yadr/vim/custom-settings/gh-markdown.vim
@@ -49,8 +48,6 @@ so ~/.yadr/vim/custom-settings/unimpaired.vim
 so ~/.yadr/vim/custom-settings/unite.vim
 so ~/.yadr/vim/custom-settings/vim-fugitive.vim
 so ~/.yadr/vim/custom-settings/vim-indent-guides.vim
-so ~/.yadr/vim/custom-settings/vim-ruby-conque.vim
-so ~/.yadr/vim/custom-settings/vim-ruby-debugger.vim
 so ~/.yadr/vim/custom-settings/yankring.vim
 so ~/.yadr/vim/custom-settings/airline.vim
 so ~/.yadr/vim/custom-settings/vim-multiple-cursors.vim
