@@ -36,8 +36,6 @@ so ~/.yadr/vim/custom-settings/NERDtree.vim
 so ~/.yadr/vim/custom-settings/next-textobject.vim
 so ~/.yadr/vim/custom-settings/persistent-undo.vim
 so ~/.yadr/vim/custom-settings/quickfix-search.vim
-so ~/.yadr/vim/custom-settings/rails.vim
-so ~/.yadr/vim/custom-settings/rspec.vim
 so ~/.yadr/vim/custom-settings/showmarks.vim
 so ~/.yadr/vim/custom-settings/smart_jump_to_tag.vim
 so ~/.yadr/vim/custom-settings/surround.vim

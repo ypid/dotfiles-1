@@ -17,15 +17,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " let NeoBundle manage NeoBundle (required)
 NeoBundleFetch "Shougo/neobundle.vim"
 
-" Ruby, Rails, Rake...
-" NeoBundle "astashov/vim-ruby-debugger"
-" NeoBundle "ecomba/vim-ruby-refactoring"
-" NeoBundle "tpope/vim-rails.git"
-" NeoBundle "tpope/vim-rake.git"
-" NeoBundle "tpope/vim-rvm.git"
-" NeoBundle "vim-ruby/vim-ruby.git"
-" NeoBundle "vim-scripts/Specky.git"
-
 " Other languages
 NeoBundle "briancollins/vim-jst"
 NeoBundle "guileen/vim-node"
@@ -33,24 +24,19 @@ NeoBundle "pangloss/vim-javascript"
 NeoBundle "itspriddle/vim-jquery.git"
 
 " Html, Xml, Css, Markdown...
-NeoBundle "claco/jasmine.vim"
-" NeoBundle "digitaltoad/vim-jade.git"
 " NeoBundle "groenewege/vim-less.git"
 NeoBundle "jtratner/vim-flavored-markdown.git"
 NeoBundle "juvenn/mustache.vim.git"
-" NeoBundle "kchmck/vim-coffee-script"
 NeoBundle "tristen/vim-sparkup"
 NeoBundle "nelstrom/vim-markdown-preview"
 NeoBundle "skwp/vim-html-escape"
 " NeoBundle "slim-template/vim-slim.git"
 " NeoBundle "timcharper/textile.vim.git"
 " NeoBundle "tpope/vim-haml"
-" NeoBundle "wavded/vim-stylus"
 
 " Git related...
 NeoBundle "gregsexton/gitv"
 NeoBundle "mattn/gist-vim"
-" NeoBundle "skwp/vim-git-grep-rails-partial"
 NeoBundle "tjennings/git-grep-vim"
 NeoBundle "tpope/vim-fugitive"
 NeoBundle "tpope/vim-git"
@@ -109,7 +95,6 @@ NeoBundle "MarcWeber/vim-addon-local-vimrc"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
-" NeoBundle "bootleq/vim-textobj-rubysymbol"
 NeoBundle "coderifous/textobj-word-column.vim"
 NeoBundle "kana/vim-textobj-datetime"
 NeoBundle "kana/vim-textobj-entire"
@@ -117,7 +102,6 @@ NeoBundle "kana/vim-textobj-function"
 NeoBundle "kana/vim-textobj-user"
 NeoBundle "lucapette/vim-textobj-underscore"
 NeoBundle "nathanaelkane/vim-indent-guides"
-" NeoBundle "nelstrom/vim-textobj-rubyblock"
 NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "vim-scripts/argtextobj.vim"
 
@@ -130,8 +114,6 @@ NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"
 NeoBundle "slim-template/vim-slim.git"
 NeoBundle "bogado/file-line.git"
-" NeoBundle "tpope/vim-rvm.git"
-
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
