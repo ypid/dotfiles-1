@@ -80,7 +80,7 @@ nnoremap <silent> <C-j> <C-w>j
 
 " Make gf (go to file) create the file, if not existent
 nnoremap gf :e<cfile><CR>
-nnoremap <C-w>f :sp +e<cfile><CR>
+nnoremap <C-w>f :vert sp +e<cfile><CR>
 nnoremap <C-w>gf :tabe<cfile><CR>
 
 " Use numbers to pick the tab you want (like iTerm)
