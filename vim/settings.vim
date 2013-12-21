@@ -22,6 +22,7 @@ so ~/.yadr/vim/custom-settings/yadr-window-killer.vim
 
 " Plugins configs
 so ~/.yadr/vim/custom-settings/cosco.vim
+so ~/.yadr/vim/custom-settings/investigate.vim
 so ~/.yadr/vim/custom-settings/tabularize.vim
 so ~/.yadr/vim/custom-settings/split-join.vim
 so ~/.yadr/vim/custom-settings/autotag.vim
