@@ -105,6 +105,7 @@ NeoBundle "lucapette/vim-textobj-underscore"
 NeoBundle "nathanaelkane/vim-indent-guides"
 NeoBundle "thinca/vim-textobj-function-javascript"
 NeoBundle "vim-scripts/argtextobj.vim"
+NeoBundle "othree/javascript-libraries-syntax.vim"
 
 " Cosmetics, color scheme, Airline...
 NeoBundle "chrisbra/color_highlight.git"
