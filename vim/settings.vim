@@ -48,5 +48,5 @@ so ~/.yadr/vim/custom-settings/unite.vim
 so ~/.yadr/vim/custom-settings/vim-fugitive.vim
 so ~/.yadr/vim/custom-settings/vim-indent-guides.vim
 so ~/.yadr/vim/custom-settings/yankring.vim
-so ~/.yadr/vim/custom-settings/airline.vim
+so ~/.yadr/vim/custom-settings/lightline.vim
 so ~/.yadr/vim/custom-settings/vim-multiple-cursors.vim
