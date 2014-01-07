@@ -39,7 +39,11 @@ if has("gui_running")
     " (the numbers don't show up) so I made it a VimEnter event
     autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 
-    set guifont=Monaco\ for\ Powerline:h13,Monaco:h13,Inconsolata\ XL:h17,Inconsolata:h20
+    if has("gui_gtk2")
+        set guifont=Monaco\ for\ Powerline 13,Monaco 13,Inconsolata\ XL 17,Inconsolata 20
+    else
+        set guifont=Monaco\ for\ Powerline:h13,Monaco:h13,Inconsolata\ XL:h17,Inconsolata:h20
+    end
 else
     "dont load csapprox if we no gui support - silences an annoying warning
     let g:CSApprox_loaded = 1
