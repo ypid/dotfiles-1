@@ -70,6 +70,7 @@ NeoBundle 'Shougo/vimproc', {
             \    },
             \ }
 NeoBundle "Shougo/unite.vim"
+NeoBundle "Shougo/neomru.vim"
 NeoBundle "Keithbsmiley/investigate.vim"
 NeoBundle "MarcWeber/vim-addon-mw-utils.git"
 NeoBundle "bogado/file-line.git"
