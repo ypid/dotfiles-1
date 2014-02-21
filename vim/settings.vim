@@ -21,6 +21,7 @@ so ~/.yadr/vim/custom-settings/yadr-whitespace-killer.vim
 so ~/.yadr/vim/custom-settings/yadr-window-killer.vim
 
 " Plugins configs
+so ~/.yadr/vim/custom-settings/hardtime.vim
 so ~/.yadr/vim/custom-settings/cosco.vim
 so ~/.yadr/vim/custom-settings/investigate.vim
 so ~/.yadr/vim/custom-settings/tabularize.vim
