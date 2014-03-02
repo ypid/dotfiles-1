@@ -16,6 +16,8 @@ function! s:unite_my_settings()
     inoremap <buffer> <C-k>     <Up>
 endfunction
 
+nnoremap ,ur :UniteResume<CR>
+
 nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
 vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert file_mru file_rec/async file/new<CR>
 
