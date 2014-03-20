@@ -118,6 +118,7 @@ NeoBundle "vim-scripts/TagHighlight.git"
 NeoBundle "itspriddle/vim-jquery.git"
 NeoBundle "slim-template/vim-slim.git"
 NeoBundle "bogado/file-line.git"
+NeoBundle "zerowidth/vim-copy-as-rtf"
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
