@@ -28,6 +28,7 @@ so ~/.yadr/vim/custom-settings/tabularize.vim
 so ~/.yadr/vim/custom-settings/split-join.vim
 so ~/.yadr/vim/custom-settings/autotag.vim
 so ~/.yadr/vim/custom-settings/easymotion.vim
+so ~/.yadr/vim/custom-settings/sneak.vim
 so ~/.yadr/vim/custom-settings/fugitive.vim
 so ~/.yadr/vim/custom-settings/gh-markdown.vim
 so ~/.yadr/vim/custom-settings/git-grep.vim
