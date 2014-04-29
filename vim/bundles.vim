@@ -21,7 +21,6 @@ NeoBundleFetch "Shougo/neobundle.vim"
 NeoBundle "briancollins/vim-jst"
 NeoBundle "guileen/vim-node"
 NeoBundle "pangloss/vim-javascript"
-NeoBundle "itspriddle/vim-jquery.git"
 
 " Html, Xml, Css, Markdown...
 " NeoBundle "groenewege/vim-less.git"
