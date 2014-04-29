@@ -1,6 +1,7 @@
 " File names should be descriptive enough to understand what configs will be in there.
 
 " General vim configs
+so ~/.yadr/vim/custom-settings/ag.vim
 so ~/.yadr/vim/custom-settings/completion-ignore.vim
 so ~/.yadr/vim/custom-settings/folding.vim
 so ~/.yadr/vim/custom-settings/scrolling.vim
@@ -31,7 +32,6 @@ so ~/.yadr/vim/custom-settings/easymotion.vim
 so ~/.yadr/vim/custom-settings/sneak.vim
 so ~/.yadr/vim/custom-settings/fugitive.vim
 so ~/.yadr/vim/custom-settings/gh-markdown.vim
-so ~/.yadr/vim/custom-settings/git-grep.vim
 so ~/.yadr/vim/custom-settings/gundo.vim
 so ~/.yadr/vim/custom-settings/jquery.vim
 so ~/.yadr/vim/custom-settings/neocomplete.vim
@@ -39,6 +39,7 @@ so ~/.yadr/vim/custom-settings/NERDtree.vim
 so ~/.yadr/vim/custom-settings/next-textobject.vim
 so ~/.yadr/vim/custom-settings/persistent-undo.vim
 so ~/.yadr/vim/custom-settings/quickfix-search.vim
+so ~/.yadr/vim/custom-settings/search.vim
 so ~/.yadr/vim/custom-settings/showmarks.vim
 so ~/.yadr/vim/custom-settings/smart_jump_to_tag.vim
 so ~/.yadr/vim/custom-settings/surround.vim

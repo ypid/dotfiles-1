@@ -47,7 +47,7 @@ imap <silent> <D-D> -
 "Go to last edit location with ,.
 nnoremap ,. '.
 
-" ,q to toggle quickfix window (where you have stuff like GitGrep)
+" ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
 nmap <silent> ,qc :cclose<CR>
 nmap <silent> ,qo :copen<CR>
@@ -62,14 +62,6 @@ autocmd FileType rspec map <buffer> <D-j> }
 autocmd FileType rspec map <buffer> <D-k> {
 autocmd FileType javascript map <buffer> <D-k> }
 autocmd FileType javascript map <buffer> <D-j> {
-
-"GitGrep - open up a git grep line, with a quote started for the search
-nnoremap ,gg :GitGrep ""<left>
-"GitGrep Current Partial
-nnoremap ,gcp :GitGrepCurrentPartial<CR>
-"GitGrep Current File
-nnoremap ,gcf :call GitGrep(expand("%:t:r"))<CR>
-
 
 "Move back and forth through previous and next buffers
 "with ,z and ,x
