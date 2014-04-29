@@ -96,6 +96,7 @@ NeoBundle "vim-scripts/lastpos.vim"
 NeoBundle "vim-scripts/sudo.vim"
 NeoBundle "xsunsmile/showmarks.git"
 NeoBundle "MarcWeber/vim-addon-local-vimrc"
+NeoBundle "justinmk/vim-sneak"
 
 " Text objects
 NeoBundle "austintaylor/vim-indentobject"
@@ -116,9 +117,6 @@ NeoBundle "tomasr/molokai"
 " NeoBundle "chriskempson/base16-vim"
 NeoBundle "itchyny/lightline.vim"
 NeoBundle "vim-scripts/TagHighlight.git"
-NeoBundle "itspriddle/vim-jquery.git"
-NeoBundle "slim-template/vim-slim.git"
-NeoBundle "bogado/file-line.git"
 NeoBundle "zerowidth/vim-copy-as-rtf"
 
 " Customization
