@@ -1,2 +1,2 @@
-nnoremap <C-S-H> :SidewaysLeft<cr>
-nnoremap <C-S-L> :SidewaysRight<cr>
+nnoremap g<C-H> :SidewaysLeft<cr>
+nnoremap g<C-L> :SidewaysRight<cr>
