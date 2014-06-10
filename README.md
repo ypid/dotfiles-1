@@ -7,7 +7,11 @@
 
     # Yet Another Dotfile Repo - Marelo version
 
+    OSX install:
     sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install.sh`"
+
+    Linux install:
+    sh -c "`curl -fsSL https://raw.github.com/lfilho/dotfiles/master/install-linux.sh`"
 
 To get to know this project, please first refer to the [original project](https://github.com/skwp/dotfiles), read their README and then come back to this one :-)
 
