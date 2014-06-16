@@ -43,6 +43,7 @@ NeoBundle "tpope/vim-git"
 
 " General text editing improvements...
 NeoBundle "lfilho/cosco.vim"
+NeoBundle "tommcdo/vim-exchange"
 NeoBundle "AndrewRadev/sideways.vim"
 NeoBundle "AndrewRadev/splitjoin.vim"
 NeoBundle "Raimondi/delimitMate"
