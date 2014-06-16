@@ -117,7 +117,9 @@ NeoBundle "tomasr/molokai"
 " NeoBundle "chriskempson/base16-vim"
 NeoBundle "itchyny/lightline.vim"
 NeoBundle "vim-scripts/TagHighlight.git"
-NeoBundle "zerowidth/vim-copy-as-rtf"
+if system('uname')=~'Darwin'
+    NeoBundle "zerowidth/vim-copy-as-rtf"
+endif
 
 " Customization
 " The plugins listed in ~/.vim/.bundles.local will be added here to
