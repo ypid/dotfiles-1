@@ -21,20 +21,20 @@ endfunction
 
 nnoremap ,ur :UniteResume<CR>
 
-nnoremap ,t :Unite -start-insert file_mru file_rec/async file/new<CR>
-vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert file_mru file_rec/async file/new<CR>
+nnoremap ,t :Unite -start-insert -buffer-name=files file_mru file_rec/async<CR>
+vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert -buffer-name=files file_mru file_rec/async<CR>
 
 "
 " Buffer listing/switching (mnemonic: Unite Buffers)
 "
-nnoremap ,ub :Unite -no-start-insert -quick-match buffer<CR>
-vnoremap ,ub "zy:<C-u>Unite -input=<C-R>z buffer<CR>
+nnoremap ,ub :Unite -no-start-insert -buffer-name=buffers -quick-match buffer<CR>
+vnoremap ,ub "zy:<C-u>Unite -input=<C-R>z -buffer-name=buffers buffer<CR>
 
 "
 " Grep buffer search (mnemonic: Unite Grep Buffer)
 "
-nnoremap ,ugb :Unite grep:$buffers -no-start-insert<CR>
-vnoremap ,ugb "zy:<C-u>Unite grep:$buffers -no-start-insert -input=<C-R>z<CR>
+nnoremap ,ugb :Unite grep:$buffers -no-start-insert -buffer-name=buffer_search<CR>
+vnoremap ,ugb "zy:<C-u>Unite grep:$buffers -no-start-insert -buffer-name=buffer_search -input=<C-R>z<CR>
 
 "
 " Grep file search (mnemonic: Unite Grep File)
