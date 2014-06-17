@@ -21,8 +21,8 @@ endfunction
 
 nnoremap ,ur :UniteResume<CR>
 
-nnoremap ,t :Unite -start-insert -buffer-name=files file_mru file_rec/async<CR>
-vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert -buffer-name=files file_mru file_rec/async<CR>
+nnoremap ,t :Unite -start-insert -buffer-name=files file_mru file_rec/async:!<CR>
+vnoremap ,t "zy:<C-u>Unite -input=<C-R>z -start-insert -buffer-name=files file_mru file_rec/async:!<CR>
 
 "
 " Buffer listing/switching (mnemonic: Unite Buffers)
